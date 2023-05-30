@@ -96,10 +96,10 @@ const historySchema = Schema(
       type: String,
       required: true,
     },
-    meals: {
-      type: [mealSchema],
-      required: true,
-    },
+    // meals: {
+    //   type: [mealSchema],
+    //   required: true,
+    // },
   },
   { timestamps: true, versionKey: false }
 );
