@@ -18,11 +18,11 @@ const historySchema = Schema(
       type: String,
       required: true,
     },
-    restaurant: {
-      type: String,
+    totalValue: {
+      type: Number,
       required: true,
     },
-    dishes: {
+    meals: {
       type: Array,
       required: true,
       name: {
@@ -33,7 +33,15 @@ const historySchema = Schema(
         type: Number,
         required: true,
       },
-      id: {
+      itemId: {
+        type: String,
+        required: true,
+      },
+      quantity: {
+        type: String,
+        required: true,
+      },
+      photo: {
         type: String,
         required: true,
       },
