@@ -19,7 +19,7 @@ const historySchema = Schema(
       required: true,
     },
     totalValue: {
-      type: Number,
+      type: String,
       required: true,
     },
     meals: {
@@ -30,7 +30,7 @@ const historySchema = Schema(
         required: true,
       },
       price: {
-        type: Number,
+        type: String,
         required: true,
       },
       itemId: {
