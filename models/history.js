@@ -88,7 +88,7 @@ const historySchema = Schema(
       type: String,
       required: true,
     },
-    address: {
+    adress: {
       type: String,
       required: true,
     },
