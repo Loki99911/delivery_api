@@ -1,9 +1,9 @@
 const { History } = require('../../models/history');
 
 const setHistory = async (req, res, next) => {
-  const { dishes, ...rest } = req.body;
+  const { meals, ...rest } = req.body;
   try {
-    const result = await History.create({ ...rest, dishes: JSON.parse(dishes) });
+    const result = await History.create({ ...rest, meals: JSON.parse(meals) });
 
     res.json({
       status: 'success',
